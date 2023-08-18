@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Open Sans', sans-serif; 
+  src: url(<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">);
+}
+
+body{
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 128, 0);
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  position: sticky;
+  top: 10px;
+}
+
+
+.logo {
+  width: auto; 
+  height: 60px;
+  padding: 5px;
+  margin-left: 100px;
+}
+
+nav {
+  margin-left: 160px; 
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px; 
+}
+
+a{color: white;
+  text-decoration: none;} 
+
+h1{ font-size: 60px;
+}
+
+.imagen{
+  width: 35%;
+  display: block;
+  margin: auto;
+}
+
+article{
+  text-align: center;
+  color: blue;
+}
+
+ footer{
+  text-align: center;
+  padding: 20px;
+ }
+ 
+ h2{
+  background-color: rgb(0, 128, 0);
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif; 
+ }
+ h3{
+  color: rgb(20, 20, 133);
+  font-family: 'Bebas Neue', sans-serif;
+  text-decoration: underline;
+  font-size: 35px;
+ }
+
+ .colorverde{
+  color: green;
+ }
+
+ table{
+  border: 2px solid rgb(0, 128, 0);
+  width: 40%;
+  margin: 0;
+ }
+ th,td{
+  border: 1px solid rgb(0, 128, 0);
+  padding: 8px;
+  text-align: center;
+  margin: 0;
+ }
+
