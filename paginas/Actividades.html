@@ -5,83 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividades</title>
     <link rel="shortcut icon" href="../multimedia/Escudo Costa.png" type="image/x-icon"> 
+    <!--bootstraplink-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body id="actividades">
-    <header>
-        <a href="../index.html"><h1><img  class="logo" src="../multimedia/Escudo Costa.png" alt="Escudo Costa Azul">Club social y deportivo Costa Azul</h1></a>
-        <nav>
-            <ul>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li><a href="Actividades.html">Actividades</a></li>
-                <li><a href="Socios.html">Socios</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header id="arriba">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary me-4 ">
+            <div class="container-fluid  ">
+                <a href="../index.html"><img src="../multimedia/Escudo Costa.png" class="logo" alt="Costa Azul logo">Club Social y deportivo Costa Azul</a>
+              <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"  >
+                <ul class="navbar-nav me-4 mb-2 mb-lg-0 " >
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Institucional
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Institucional.html#historia">Historia</a></li>
+                            <li><a class="dropdown-item" href="Institucional.html#comision">Comision directiva</a></li>
+                            <li><a class="dropdown-item" href="Institucional.html#sede">Sede</a></li>
+                            <li><a class="dropdown-item" href="Institucional.html#cantina">Cantina</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light me-4 " aria-current="page" href="Actividades.html">Actividades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4 " href="Socios.html">Socios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4 " href="Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+               </div>
+            </div>
+          </nav>
+       
     </header>
 
    <main>
          <h2>Actividades</h2>
-         <section><p>Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion</p></section>
-         <section>
 
-         <h3>Bochas</h3>
-         <p>Unas Lineas sobre la actividad junto a una imagen.Unas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagen
-         </p>
-         <!-- Agregar imagen de la actividad -->
-         </section>
+         <div id="grilla" class="grid-container">
+            <div id="inicios" class="card full-width">
+                <img src="../multimedia/Actividades/Bochas vieja.jpg" alt="Bochas">
+                <img src="../multimedia/Actividades/bochas.jpg" alt="Bochas">
+                <img src="../multimedia/Actividades/apo.jpg" alt="Bochas">
+                <h3>Inicios</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+              </div>
+    
+             <div  id="bochas" class="card">
+                <img src="../multimedia/Actividades/bochas 2.jpg" alt="Bochas">
+                <h3>Bochas</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+             </div>
+    
+             <div id="futbol" class="card">
+                <img src="../multimedia/Actividades/equipo.jpg" alt="Futbol">
+                <h3>Futbol</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+             </div>
+    
+             <div id="femenino" class="card">
+                <img src="../multimedia/Actividades/equipo 2.png" alt="Futbol Femenino">
+                <h3>Futbol Femenino</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+             </div>
+    
+             <div id="zumba" class="card">
+                <img src="../multimedia/Actividades/patin artistico.jpg" alt="Zumba">
+                <h3>Zumba</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+             </div>
+    
+             <div id="acondicionamiento" class="card">
+                <img src="../multimedia/Actividades/acondicionamiento.jpg" alt="Acondicionamiento Fisico">
+                <h3>Acondicionamiento Fisico</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+             </div>
+    
+             <div id="taekwon-do" class="card">
+                <img src="../multimedia/Actividades/taekwondo.jpeg" alt="Taekwon-do">
+                <h3>Taekwon-do</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+             </div>
+    
+             <div id="iniciacion" class="card">
+                <img src="../multimedia/Actividades/iniciacion.png" alt="Iniciacion al deporte">
+                <h3>Iniciacion al deporte</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+             </div>
+    
+             <div id="basquet" class="card">
+                <img src="../multimedia/Actividades/voley.jpeg" alt="basquet">
+                <h3>Bastquet</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+             </div>
+    
+             <div id="arte" class="card">
+                <img src="../multimedia/Actividades/arte.jpeg" alt="Arte">
+                <h3>Arte</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+             </div>
+    
+             <div id="patin" class="card full-width">
+                <img src="../multimedia/Actividades/patin artistico.jpg" alt="Patin">
+                <img src="../multimedia/Actividades/patin 2.jpg" alt="Patin">
+                <img src="../multimedia/Actividades/patin 3.jpg" alt="Patin">
+                <h3>Patin</h3>
+                <p class="full-width">Desde sus inicios El Club Conto con diferentes Actividades deportivas siendo Las Bochas la mas popular en toda su historia, aca les contamos las actividades que estan disponibles en la institucion.</p>
+              </div>
+         </div>
 
-         <section>
-         <h3>Futbol</h3>
-         <p>Unas Lineas sobre la actividad junto a una imagen.Unas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagen
-         </p>
-         <!-- Agregar imagen de la actividad -->
-         </section>
-
-         <section>
-         <h3>Patin</h3>
-         <p>Unas Lineas sobre la actividad junto a una imagen.Unas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagen
-         </p>
-         <!-- Agregar imagen de la actividad -->
-         </section>
-
-         <section>
-         <h3>Introduccion al deporte</h3>
-         <p>Unas Lineas sobre la actividad junto a una imagen.Unas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagen
-         </p>
-         <!-- Agregar imagen de la actividad -->
-         </section>
-
-         <section>
-         <h3>Zumba</h3>
-         <p>Unas Lineas sobre la actividad junto a una imagen.Unas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagen
-         </p>
-         <!-- Agregar imagen de la actividad -->
-         </section>
-
-         <section>
-         <h3>Acondicionamiento fisico integral</h3>
-         <p>Unas Lineas sobre la actividad junto a una imagen.Unas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagen
-         </p>
-          <!-- Agregar imagen de la actividad -->
-         </section>
-
-         <section>
-         <h3>Arte</h3>
-         <p>Unas Lineas sobre la actividad junto a una imagen.Unas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagenUnas Lineas sobre la actividad junto a una imagen
-         </p>
-         <!-- Agregar imagen de la actividad -->
-         </section>
-
+        
    </main>
 
 <footer>
-    <h4><a href="#actividades" class="colorverde">Volver Arriba</a></h4>
+
+    <h4><a href="#actividades">Volver Arriba</a></h4>
 
     <h5>Club social y deportivo Costa Azul fundado en 1947 Playa Chapadmalal</h5>
-</footer>
-<!-- agregar iconos de redes sociales y wasap -->
 
+    <!-- redes -->
+    <a href="https://Facebook.com" target="_blank"><img src="../multimedia/facebook_108044.png" class="redes" alt="Facebook"></a>
+    <a href="https://Instagram.com" target="_blank"><img src="../multimedia/instagram_108043.png" class="redes" alt="Instagram"></a>
+    <a href="https://twitter.com" target="_blank"><img src="../multimedia/twitter_x_new_logo_x_rounded_icon_256078.png" class="twitter" alt="twitter"></a>
+    
+</footer>
+
+<!--bootstraplink-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
 </body>
 </html>
