@@ -1,6 +1,12 @@
 @font-face {
   font-family: 'Open Sans', sans-serif; 
-  src: url(<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">);
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
+/*variables de colores*/
+:root {
+  --color-primario: rgb(25,135,84);
+  --color-secundario: rgb(20, 20, 133);
 }
 
 body{
@@ -13,7 +19,7 @@ body{
 .container-fluid {
   font-size: 20px;
   color: white;
-  background-color: rgb(25,135,84);
+  background-color: var(--color-primario);
   padding:30px 150px;  
 }
 
@@ -21,7 +27,34 @@ body{
   width: 60px; 
   height: auto;
   padding: 5px;
-  margin-left: 100px; 
+  margin-left: 5px; 
+}
+
+.costaazul{
+  font-size: 45px;
+  font-family: 'Bebas Neue', sans-serif; 
+ }
+
+.dropdown-item{
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif; 
+}
+
+.dropdown-item:hover{
+  background-color: var(--color-secundario);
+  border-radius: 3px;
+  color: white;
+}
+
+.nav-item{
+  font-size: 30px;
+  margin-left: 30px;
+  font-family: 'Bebas Neue', sans-serif; 
+}
+
+.nav-item:hover{
+  background-color: var(--color-secundario);
+  border-radius: 3px;
 }
 
 a{
@@ -29,15 +62,19 @@ a{
   text-decoration: none;
 } 
 
+main{
+  margin: 50px;
+}
+
 .imagen{
   width: 40%;
   display: block;
   margin: auto;
 }
 
-p{
-  width: 40%;
-  color: rgb(20, 20, 133);
+article{
+  width: 50%;
+  color: var(--color-secundario);
   margin: auto;
   padding: 40px;
   text-align: center; 
@@ -46,11 +83,11 @@ p{
  footer{
   text-align: center;
   padding-bottom: 5px;
-  color: rgb(25,135,84);   
+  color: var(--color-primario);   
  }
  
  h2{
-  background-color: rgb(25,135,84);
+  background-color: var(--color-primario);
   text-align: center;
   font-size: 35px;
   color: white;
@@ -58,7 +95,7 @@ p{
  }
 
  h3{
-  color: rgb(20, 20, 133);
+  color: var(--color-secundario);
   font-family: 'Bebas Neue', sans-serif;
   text-decoration: underline;
   font-size: 35px;
@@ -76,11 +113,12 @@ p{
 
 .iconos{
   width: 60px;
-  margin: 0px;
+  margin: auto;
 }
 
 h4 > a{
-  color: rgb(25, 135, 84)
+  color: var(--color-primario);
+  text-decoration: underline;
 }
 
 /* grid cards actividades */
@@ -93,7 +131,7 @@ h4 > a{
 }
 
 .card {
-  border: 1px solid rgb(20, 20, 133);
+  border: 1px solid var(--color-secundario);
   padding: 20px;
   text-align: center;
   box-shadow: 0px 4px 8px rgba(20, 20, 133, 0.4);
@@ -120,25 +158,14 @@ h4 > a{
   margin: 10px 0;
 }
 
-#inicios {
+#inicios, #patin {
   grid-column: span 3; 
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 10px; 
  }
 
-#inicios h3, #inicios p {
-  grid-column: span 3; 
-  margin: 0; 
-}
-
-#patin {
-  grid-column: span 3;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-#patin h3, #patin p {
+#inicios h3, #inicios p, #patin h3, #patin p {
   grid-column: span 3; 
   margin: 0; 
 }
@@ -151,13 +178,14 @@ h4 > a{
 
 .formulario {
   max-width: 650px;
-  background-color: rgb(25,135,84);
+  min-width: 450px;
+  background-color: var(--color-primario);
   border-radius: 10px;
   padding: 20px;
   color: white;
   width: 40%;
   box-shadow: 0px 0px 8px rgb(25,135,84,0.6);
-  margin-left: 200px;
+  margin-left: 5%;  
 }
 
 form {
@@ -176,7 +204,7 @@ input[type="number"],
 textarea {
   padding: 5px;
   margin-top: 5px;
-  border: 1px solid rgb(20, 20, 133);
+  border: 1px solid var(--color-secundario);
   border-radius: 5px;
 }
 
@@ -197,30 +225,97 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #080763;
+  background-color: var(--color-secundario);
 }
 
 /* Estilos para contacto */
 .contactos {
   max-width: 650px;
-  width: 50%;
+  width: 100%;
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 0px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  margin-right: 200px;
+  margin-right: 5%;
+}
+ 
+.contacto-item {
+  display: flex;
+  align-items: center;    
+}
+
+.iconos{
+  width: 60px;
+  margin: 50px 10px 50px 20px ;
 }
 
 
-
 table{
-  border: 2px solid rgb(25,135,84);
+  border: 2px solid var(--color-primario);
   width: 40%;
   margin: 0;
  }
  th,td{
-  border: 1px solid rgb(25,135,84);
+  border: 1px solid var(--color-primario);
   padding: 8px;
   text-align: center;
   margin: 0;
  }
+
+/*adaptacion a vista mobile max 768px*/
+ @media screen and (max-width: 768px) {
+  .contenedor{
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .contactos{
+    margin: auto;
+    margin-top: 20px;
+  }
+  .texto-logo{
+    display: none;
+  }
+  .logo{
+    margin: auto;
+  }
+  .formulario {
+    width: 100%;        
+    margin: auto;
+    margin-left: 0;
+
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr; 
+    margin-left: 0; 
+    margin-right: 0; 
+    gap: 15px; 
+  }
+
+  .card {
+    width: 100%;   
+  }
+
+  .card img {
+    max-height: 100%; 
+  }
+
+  #inicios, #patin {
+    grid-column: unset; 
+  }
+
+  article{
+    width: 100%;
+  }
+
+  main{
+    margin: 10px;
+  }
+
+  }
+
+    
+ 
+
